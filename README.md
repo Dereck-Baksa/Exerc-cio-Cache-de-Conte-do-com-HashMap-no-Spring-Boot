@@ -36,6 +36,8 @@ mvn clean package
 java -jar target/cache-0.0.1-SNAPSHOT.jar
 ```
 
+Ao abrir `http://localhost:8080/`, a API retorna uma mensagem com os endpoints disponíveis. A raiz não é uma interface web; as operações devem ser chamadas nos endpoints indicados abaixo.
+
 O banco H2 é em memória (`jdbc:h2:mem:xpto`): os dados são recriados quando a aplicação reinicia. A console do H2 fica em `http://localhost:8080/h2-console`, com JDBC URL `jdbc:h2:mem:xpto`, usuário `sa` e senha em branco.
 
 ## Como usar a API
